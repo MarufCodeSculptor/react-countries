@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-const CountryCard = ({ country, handleCountry,}) => {
+const CountryCard = ({ country, handleCountry }) => {
   const { name, capital, independent, flags, cca3 } = country;
   const [visited, setVisited] = useState(false);
   const togleVisited = () => {
@@ -70,6 +70,7 @@ const CountryCard = ({ country, handleCountry,}) => {
           <button className="btn btn-active btn-primary capitalize text-xl font-bold">
             More info
           </button>
+          
         </div>
       </div>
     </div>
